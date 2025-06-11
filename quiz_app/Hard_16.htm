@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Quiz</title>
+    <!-- <link rel="stylesheet" href="Easy_5.css"> -->
+</head>
+<body>
+    <div id="hard">
+        <h2 >QUESTION 16:</h2>
+        <p >LEVEL : <span style="color:rgb(180, 12, 35)">HARD</span></p>
+    </div>
+    <div id="question16">
+        
+    </div>
+    <form action="Hard_17.htm" onsubmit="return validateRadio16()">
+        <div id="hard16">
+            <p>16. What is the time complexity of heap sort in the worst case?</p>
+            <div>
+                <input type="radio" name="q16" value="0"  ><span>O(n)</span> <br>
+                <input type="radio" name="q16" value="1" ><span>O(n log n)</span> <br>
+                <input type="radio" name="q16" value="0"><span>O(n²)</span> <br>
+                <input type="radio" name="q16" value="0" ><span>O(log n)</span>
+            </div>
+            <button>NEXT QUESTION</button>
+        </div>
+    </form>
+    <style>
+        *{
+            margin: 0;
+        }
+        @media (max-width:377px){
+            body{
+                /*background-color: red;*/
+                background-color:rgba(0, 0, 0, 0.4);;
+                /*background-color: #3c4043; */
+                
+            }
+            #hard {
+                /* border: 2px solid black;
+                
+                font-size: 30px;
+                font-family: 'Poppins',sans-serif;
+                text-align: right;
+                margin-top: 60px;
+
+                margin-right: 200px; */
+                border:none;
+                
+                /*margin: 90px auto;
+                /*display: flex;
+                align-items: center;
+                justify-content: center;
+                /*padding-left: 280px;*/
+
+            }
+            #hard h2{
+                margin-right: 90px auto;
+                margin: 50px;
+                text-align: center;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 26px;
+
+                /*color:#9b05bc;*/
+            }
+            #hard p{
+                margin-top: -40px;
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 25px;
+            }
+            #hard16{
+                
+                
+                /*background-color:rgba(0, 0, 0, 0.4);*/
+                background-color: #3c4043;
+                border-radius: 40px;
+                width:300px;
+                height:400px;
+                border: 2px solid black;
+                margin: 60px auto;
+                animation: float 7s ease-in-out infinite
+                
+            }
+            
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+            }
+            #hard16 p{
+                margin-top: 40px;
+                
+                margin-left: 10px;
+                
+                font-size: 20px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #hard16 div{
+                
+                
+                padding-left:10px;
+                margin-top: 40px;
+                
+            }
+            #hard16 div input{
+                margin-right: 5px;
+                cursor: pointer;
+                margin-bottom: 30px;
+            }
+            
+            #hard16 button{
+                
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:2px auto;
+                height: 40px;
+                border-radius: 10px;
+                border: 2px solid black;
+                color:red;
+                background-color: white;
+            }
+            #hard16 button:hover{
+                cursor: pointer;
+                transform: translateY(-5px);
+                background-color: rgb(185, 10, 10);
+                color:white;
+            }
+            
+
+            #hard16 div span{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                color:rgb(13, 2, 49);
+            }
+
+
+        }
+        @media (min-width:378px) and (max-width :427px){
+            body{
+                
+                background-color:#3c4043;
+            }
+            #hard {
+                border:none;
+            }
+            #hard h2{
+                margin-right: 90px auto;
+                margin: 60px;
+                text-align: center;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 35px;
+
+                /*color:#9b05bc;*/
+            }
+            #hard p{
+                margin-top: -10px;
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 30px;
+            }
+            #hard16{
+                /*background-color:#3c4043;*/
+                background-color:rgb(153, 162, 163);
+                border-radius: 40px;
+                width:350px;
+                height:400px;
+                border: 2px solid black;
+                margin: 70px auto;
+                animation: float 7s ease-in-out infinite
+                
+            }
+            
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+            }
+            #hard16 p{
+                margin-top: 40px;
+                
+                margin-left: 10px;
+                
+                font-size: 20px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #hard16 div{
+                padding-left:10px;
+                margin-top: 40px;
+                
+            }
+            #hard16 div input{
+                margin-right: 5px;
+                cursor: pointer;
+                margin-bottom: 30px;
+            }
+            
+            #hard16 button{
+                
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                margin:2px auto;
+                margin-top: 20px;
+                height: 40px;
+                border-radius: 10px;
+                border: 2px solid black;
+                color:red;
+                background-color: white;
+            }
+            #hard16 button:hover{
+                cursor: pointer;
+                transform: translateY(-5px);
+                background-color: rgb(185, 10, 10);
+                color:white;
+            }
+            
+
+            #hard16 div span{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                color:rgb(13, 2, 49);
+            }
+
+        }
+        @media (min-width:428px) and (max-width:769px){
+            body{
+                background-color:rgba(0, 0, 0, 0.4);
+            }
+            #hard {
+                border:none;
+            }
+            #hard h2{
+                margin-right: 90px auto;
+                margin: 20px;
+                text-align: center;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 45px;
+
+                /*color:#9b05bc;*/
+            }
+            #hard p{
+                margin-top: -5px;
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 35px;
+            }
+            #hard16{
+                background-color:rgb(77, 121, 125);
+                border-radius: 40px;
+                width:620px;
+                height:400px;
+                border: 2px solid black;
+                margin: 50px auto;
+                animation: float 7s ease-in-out infinite
+                
+            }
+            
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+            }
+            #hard16 p{
+                margin-top: 40px;
+                
+                margin-left: 40px;
+                
+                font-size: 20px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #hard16 div{
+                padding-left:40px;
+                margin-top: 40px;
+                
+            }
+            #hard16 div input{
+                margin-right: 5px;
+                cursor: pointer;
+                margin-bottom: 30px;
+            }
+            
+            #hard16 button{
+                
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:2px auto;
+                height: 40px;
+                border-radius: 10px;
+                border: 2px solid black;
+                color:red;
+                background-color: white;
+            }
+            #hard16 button:hover{
+                cursor: pointer;
+                transform: translateY(-5px);
+                background-color: rgb(185, 10, 10);
+                color:white;
+            }
+            
+            #hard16 div span{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                color:rgb(13, 2, 49);
+            }
+
+        }
+        
+        @media (min-width:770px)and (max-width:2000px) {
+            body{
+                background: linear-gradient(to right, #00c6ff, #0072ff); 
+            }
+            
+            #hard{
+                border: 2px solid black;
+                
+                font-size: 30px;
+                font-family: 'Poppins',sans-serif;
+                text-align: right;
+                margin-top: 60px;
+
+                margin-right: 200px; 
+                border:none;
+                margin: 90px auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                padding-left: 280px;
+
+            }
+            #hard h2{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 40px;
+                color:#9b05bc  ;
+            }
+            #hard p{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 25px;
+            }
+            #hard16{
+                border-radius: 80px;
+                background:linear-gradient(to right,white,pink);
+                width:900px;
+                height:450px;
+                border: 2px solid black;
+                margin: 10px auto;
+                animation: float 7s ease-in-out infinite
+                
+            }
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+            }
+            #hard16 p{
+                margin-top: 30px;
+                
+                text-align: left;
+                margin-left: 80px;
+                font-size: 25px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #hard16 button{
+                
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:2px auto;
+                height: 40px;
+                border-radius: 10px;
+                border: 2px solid black;
+                color:red;
+                background-color: white;
+            }
+            #hard16 button:hover{
+                cursor: pointer;
+                transform: translateY(-5px);
+                background-color: rgb(185, 10, 10);
+                color:white;
+            }
+            #hard16 div{
+                padding-left:80px;
+                margin-top: 50px;
+                
+            }
+            #hard16 div input{
+                
+                cursor: pointer;
+                margin-bottom: 40px;
+            }
+
+            #hard16 div span{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 20px;
+                color:rgb(26, 113, 9);
+            }
+            
+            
+        }
+    </style>
+
+    <!-- <style>
+        *{
+            margin: 0;
+        }
+        body{
+            /* background: linear-gradient(to right, #00c6ff, #0072ff);  */
+            /* background: linear-gradient(to right, #232526, #414345);  */
+            /*background: linear-gradient(to right, #8e0e00, #1f1c18);*/
+            background: linear-gradient(to right, #4e0e87, #7426c3, #8867a8);
+
+
+        }
+        #hard{
+            /* border: 2px solid black;
+            
+            font-size: 30px;
+            font-family: 'Poppins',sans-serif;
+            text-align: right;
+            margin-top: 60px;
+
+            margin-right: 200px; */
+            border:none;
+            margin: 90px auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-left: 280px;
+        }
+        #hard h2{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 40px;
+            color:#310155  ;
+        }
+        #hard p{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 25px;
+        }
+        #hard16{
+            border-radius: 80px;
+            background:linear-gradient(to right,white,pink);
+            width:900px;
+            height:450px;
+            border: 2px solid black;
+            margin: 10px auto;
+            animation: float 7s ease-in-out infinite;   
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        #hard16 p{
+            margin-top: 30px;
+            
+            text-align: left;
+            margin-left: 80px;
+            font-size: 25px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #hard16 button{
+            
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:2px auto;
+            height: 40px;
+            border-radius: 10px;
+            border: 2px solid black;
+            color:red;
+            background-color: white;
+        }
+        #hard16 button:hover{
+            cursor: pointer;
+            transform: translateY(-5px);
+            background-color: rgb(185, 10, 10);
+            color:white;
+        }
+        #hard16 div{
+            padding-left:80px;
+            margin-top: 50px;
+            
+        }
+        #hard16 div input{
+            
+            cursor: pointer;
+            margin-bottom: 40px;
+        }
+        #hard16 div span{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            color:rgb(26, 113, 9);
+        }
+    </style> -->
+    <script>
+        function validateRadio16(){
+            
+            const radios = document.getElementsByName("q16");
+            let selected=null
+            for (let i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    selected=radios[i];
+                    break // Allow submit
+                }
+            }
+            if(!selected){
+                alert("Please select the correct choice.");
+                return false;// Block form submission
+            }
+            let score=parseInt(localStorage.getItem('score'))||0;
+            if(selected.value === '1'){
+                score+=1
+                localStorage.setItem('score',score);
+                console.log(score)
+            }
+            window.location.href = "Hard_17.htm"
+            return false;            
+        }
+    </script>
+</body>
+</html>

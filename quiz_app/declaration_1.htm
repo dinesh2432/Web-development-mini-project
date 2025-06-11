@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaration Page</title>
+    <link rel="stylesheet" href="declaration_form.css">
+</head>
+<body>
+    <div id="declaration">
+        <h2>DECLARATION PAGE</h2>
+    </div>
+    <div id="instruction">
+        <p>READ THE INSTRUCTION CAREFULLY</p>
+    </div>
+    <form action="Easy_1.htm">
+        <div id="rules">
+            <p>1. THERE ARE TOTALLY <span style="color: red;">THREE LEVELS</span> OF QUESTION</p>
+            <p><span class="questions" style="color:rgb(173, 10, 191);">EASY - 10 QUESTION</span></p>
+            <p><span class="questions" style="color: rgb(4, 10, 124);">MEDIUM -5 QUESTION</span></p>
+            <p><span class="questions" style="color: red;">HARD -5 QUESTION</span></p>
+            <p>2. ONCE YOU HAVE SELECTED THE ANSWER IT <span style="color: red;">CAN'T BE CHANGED</span></p>
+            <p>3. SCORE ATLEAST <span style="color: red;">15 MARKS</span> TO WIN THE GAME</p>
+            <p>4. <span style="color: red;">DON'T USE GOOGLE</span> OR ANY OTHER <span style="color: red;">AI</span> TO ANSWER THE QUESTION</p>
+            <p>5. CLICK <span style="color: red;">START</span> TO BEGIN THE GAME</p>
+            <button id="start">START</button>
+        </div>
+    </form>
+    <style>
+        *{
+            margin: 0;
+        }
+        @media (max-width:377px){
+            body{
+                background-color: rgba(135, 162, 196, 0.9);
+            }
+            #declaration{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                
+                font-size: 15px;
+                
+                margin: 35px;
+                
+                color:rgba(161, 54, 54,0.9);
+                text-align: center;
+            }
+            #instruction{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                
+                font-weight: bold;
+                font-size: 14px;
+                margin-top: 30px;
+                word-spacing: 1px;
+                color:rgba(161, 54, 54, 0.9);
+            
+                text-align: center;
+            }
+            #rules{
+                border: 3px solid rgba(105, 5, 159, 0.9);
+                border-radius: 10px;
+                background-color:rgba(247, 203, 203,0.2);
+                width: 300px;
+                height:480px;
+                margin:50px auto;
+            }
+            #rules  p{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 15px;
+                margin-top: 22px;
+                margin-left: 10px;
+            }
+            .questions{
+                margin-left:70px;
+            }
+            #start{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:30px auto;
+                border-radius: 10px;
+                height:40px;
+                width:90px;
+                border: none;
+                letter-spacing: 1px;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'Poppins',sans-serif;
+                /* background-color: rgba(178, 66, 66, 0.8); */
+                background-color: rgb(232, 223, 223);
+                color:rgba(247, 14, 14, 0.9);
+            }
+            #start:hover{
+                cursor: pointer;
+                color: white;
+                background-color: red;
+                transform: translateY(-10px);
+            }
+        }
+        @media (min-width:378px) and (max-width :427px){
+            body{
+                background-color: rgba(135, 162, 196, 0.9);
+            }
+            #declaration{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                
+                font-size: 18px;
+                margin: 35px;
+                
+                color:rgba(161, 54, 54,0.9);
+                text-align: center;
+            }
+            #instruction{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                
+                font-weight: bold;
+                font-size: 16px;
+                margin-top: 30px;
+                word-spacing: 1px;
+                color:rgba(161, 54, 54, 0.9);
+            
+                text-align: center;
+            }
+            #rules{
+                border: 3px solid rgba(105, 5, 159, 0.9);
+                border-radius: 10px;
+                background-color:rgba(247, 203, 203,0.2);
+                width: 350px;
+                height:480px;
+                margin:50px auto;
+            }
+            #rules  p{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 15px;
+                margin-top: 22px;
+                margin-left: 10px;
+            }
+            .questions{
+                margin-left:70px;
+            }
+            #start{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:45px auto;
+                border-radius: 10px;
+                height:40px;
+                width:90px;
+                border: none;
+                letter-spacing: 1px;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'Poppins',sans-serif;
+                /* background-color: rgba(178, 66, 66, 0.8); */
+                background-color: rgb(232, 223, 223);
+                color:rgba(247, 14, 14, 0.9);
+            }
+            #start:hover{
+                cursor: pointer;
+                color: white;
+                background-color: red;
+                transform: translateY(-10px);
+            }
+        }
+
+        @media (min-width:428px) and (max-width:769px){
+            body{
+                background-color: rgba(135, 162, 196, 0.9);
+            }
+            #declaration{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                
+                font-size: 30px;
+                margin: 35px;
+                
+                color:rgba(161, 54, 54,0.9);
+                text-align: center;
+            }
+            #instruction{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                
+                font-weight: bold;
+                font-size: 20px;
+                margin-top: 30px;
+                word-spacing: 1px;
+                color:rgba(161, 54, 54, 0.9);
+            
+                text-align: center;
+            }
+            #rules{
+                border: 3px solid rgba(105, 5, 159, 0.9);
+                border-radius: 10px;
+                background-color:rgba(247, 203, 203,0.2);
+                width: 580px;
+                height:480px;
+                margin:50px auto;
+            }
+            #rules  p{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 19px;
+                margin-top: 22px;
+                margin-left: 10px;
+            }
+            .questions{
+                margin-left:70px;
+            }
+            #start{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:45px auto;
+                border-radius: 10px;
+                height:40px;
+                width:90px;
+                border: none;
+                letter-spacing: 1px;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'Poppins',sans-serif;
+                /* background-color: rgba(178, 66, 66, 0.8); */
+                background-color: rgb(232, 223, 223);
+                color:rgba(247, 14, 14, 0.9);
+            }
+            #start:hover{
+                cursor: pointer;
+                color: white;
+                background-color: red;
+                transform: translateY(-10px);
+            }
+        }
+        @media (min-width:770px)and (max-width:2000px) {
+            body{
+                background-color: rgba(135, 162, 196, 0.9);
+            }
+            #declaration{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                
+                font-size: 30px;
+                margin: 35px;
+                
+                color:rgba(161, 54, 54,0.9);
+                text-align: center;
+            }
+            #instruction{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                
+                font-weight: bold;
+                font-size: 20px;
+                margin-top: 30px;
+                word-spacing: 1px;
+                color:rgba(161, 54, 54, 0.9);
+            
+                text-align: center;
+            }
+            #rules{
+                border: 3px solid rgba(105, 5, 159, 0.9);
+                border-radius: 30px;
+                background-color:rgba(247, 203, 203,0.2);
+                width: 1000px;
+                height:500px;
+                margin:50px auto;
+            }
+            #rules  p{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 19px;
+                margin-top: 30px;
+                margin-left: 60px;
+            }
+            .questions{
+                margin-left:100px;
+            }
+            #start{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:30px auto;
+                border-radius: 10px;
+                height:40px;
+                width:90px;
+                border: none;
+                letter-spacing: 1px;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'Poppins',sans-serif;
+                /* background-color: rgba(178, 66, 66, 0.8); */
+                background-color: rgb(232, 223, 223);
+                color:rgba(247, 14, 14, 0.9);
+            }
+            #start:hover{
+                cursor: pointer;
+                color: white;
+                background-color: red;
+                transform: translateY(-10px);
+            }
+        }
+        
+
+        
+    </style>
+
+    <!-- <style>
+        *{
+            margin:0;
+        }
+        body{
+            background-color: rgba(135, 162, 196, 0.9);
+        }
+        #declaration{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 200;
+            font-size: 25px;
+            margin-top: 55px ; 
+            word-spacing: 10px;
+            color:rgba(161, 54, 54,0.9);
+            text-align: center;
+        }
+        #instruction{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 200;
+            font-size: 25px;
+            margin-top: 30px;
+            word-spacing: 10px;
+            color:rgba(161, 54, 54, 0.9);
+        
+            text-align: center;
+        }
+        #rules{
+            border: 3px solid rgba(105, 5, 159, 0.9);
+            border-radius: 20px;
+            background-color:rgba(247, 203, 203,0.2);
+            width: 900px;
+            height:460px;
+            margin:50px auto;
+        }
+        #rules  p{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            margin-top: 22px;
+            margin-left: 30px;
+        }
+        .questions{
+            margin-left:200px;
+        }
+        #start{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:30px auto;
+            border-radius: 10px;
+            height:40px;
+            width:90px;
+            border: none;
+            letter-spacing: 1px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Poppins',sans-serif;
+            /* background-color: rgba(178, 66, 66, 0.8); */
+            background-color: rgb(232, 223, 223);
+            color:rgba(247, 14, 14, 0.9);
+        }
+        #start:hover{
+            cursor: pointer;
+            color: white;
+            background-color: red;
+            transform: translateY(-10px);
+        }
+    </style> -->
+</body>
+</html>

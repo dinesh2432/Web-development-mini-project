@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate Quiz</title>
+    <!-- <link rel="stylesheet" href="Easy_5.css"> -->
+</head>
+<body>
+    <div id="medium">
+        <h2 >QUESTION 14:</h2>
+        <p >LEVEL : <span style="color:rgb(180, 12, 35)">MEDIUM</span></p>
+    </div>
+    <div id="question14">
+        
+    </div>
+    <form action="Medium_15.htm" onsubmit="return validateRadio14()">
+        <div id="medium14">
+            <p>14.What does the len() function return in Python?</p>
+            <div>
+                <input type="radio" name="q14" value="0"  ><span> Length of an integer</span> <br>
+                <input type="radio" name="q14" value="0" ><span> Total memory used</span> <br>
+                <input type="radio" name="q14" value="1"><span>Number of elements in a list/string</span> <br>
+                <input type="radio" name="q14" value="0" ><span>Type of the object</span>
+            </div>
+            <button>NEXT QUESTION</button>
+        </div>
+    </form>
+    <style>
+        *{
+            margin: 0;
+        }
+        @media (max-width:377px){
+            body{
+                /*background-color: red;*/
+                background-color:rgba(0, 0, 0, 0.4);;
+                /*background-color: #3c4043; */
+                
+            }
+            #medium {
+                /* border: 2px solid black;
+                
+                font-size: 30px;
+                font-family: 'Poppins',sans-serif;
+                text-align: right;
+                margin-top: 60px;
+
+                margin-right: 200px; */
+                border:none;
+                
+                /*margin: 90px auto;
+                /*display: flex;
+                align-items: center;
+                justify-content: center;
+                /*padding-left: 280px;*/
+
+            }
+            #medium h2{
+                margin-right: 90px auto;
+                margin: 50px;
+                text-align: center;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 26px;
+
+                /*color:#9b05bc;*/
+            }
+            #medium p{
+                margin-top: -40px;
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 25px;
+            }
+            #medium14{
+                
+                
+                /*background-color:rgba(0, 0, 0, 0.4);*/
+                background-color: #3c4043;
+                border-radius: 40px;
+                width:300px;
+                height:400px;
+                border: 2px solid black;
+                margin: 60px auto;
+                animation: float 7s ease-in-out infinite
+                
+            }
+            
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+            }
+            #medium14 p{
+                margin-top: 40px;
+                
+                margin-left: 10px;
+                
+                font-size: 20px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #medium14 div{
+                
+                
+                padding-left:10px;
+                margin-top: 40px;
+                
+            }
+            #medium14 div input{
+                margin-right: 5px;
+                cursor: pointer;
+                margin-bottom: 30px;
+            }
+            
+            #medium14 button{
+                
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:2px auto;
+                height: 40px;
+                border-radius: 10px;
+                border: 2px solid black;
+                color:red;
+                background-color: white;
+            }
+            #medium14 button:hover{
+                cursor: pointer;
+                transform: translateY(-5px);
+                background-color: rgb(185, 10, 10);
+                color:white;
+            }
+            
+
+            #medium14 div span{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                color:rgb(13, 2, 49);
+            }
+
+
+        }
+        @media (min-width:378px) and (max-width :427px){
+            body{
+                
+                background-color:#3c4043;
+            }
+            #medium {
+                border:none;
+            }
+            #medium h2{
+                margin-right: 90px auto;
+                margin: 60px;
+                text-align: center;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 35px;
+
+                /*color:#9b05bc;*/
+            }
+            #medium p{
+                margin-top: -10px;
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 30px;
+            }
+            #medium14{
+                /*background-color:#3c4043;*/
+                background-color:rgb(153, 162, 163);
+                border-radius: 40px;
+                width:350px;
+                height:400px;
+                border: 2px solid black;
+                margin: 70px auto;
+                animation: float 7s ease-in-out infinite
+                
+            }
+            
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+            }
+            #medium14 p{
+                margin-top: 40px;
+                
+                margin-left: 10px;
+                
+                font-size: 20px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #medium14 div{
+                padding-left:10px;
+                margin-top: 40px;
+                
+            }
+            #medium14 div input{
+                margin-right: 5px;
+                cursor: pointer;
+                margin-bottom: 30px;
+            }
+            
+            #medium14 button{
+                
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                margin:2px auto;
+                margin-top: 20px;
+                height: 40px;
+                border-radius: 10px;
+                border: 2px solid black;
+                color:red;
+                background-color: white;
+            }
+            #medium14 button:hover{
+                cursor: pointer;
+                transform: translateY(-5px);
+                background-color: rgb(185, 10, 10);
+                color:white;
+            }
+            
+
+            #medium14 div span{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                color:rgb(13, 2, 49);
+            }
+
+        }
+        @media (min-width:428px) and (max-width:769px){
+            body{
+                background-color:rgba(0, 0, 0, 0.4);
+            }
+            #medium {
+                border:none;
+            }
+            #medium h2{
+                margin-right: 90px auto;
+                margin: 20px;
+                text-align: center;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 45px;
+
+                /*color:#9b05bc;*/
+            }
+            #medium p{
+                margin-top: -5px;
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 35px;
+            }
+            #medium14{
+                background-color:rgb(77, 121, 125);
+                border-radius: 40px;
+                width:620px;
+                height:400px;
+                border: 2px solid black;
+                margin: 50px auto;
+                animation: float 7s ease-in-out infinite
+                
+            }
+            
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+            }
+            #medium14 p{
+                margin-top: 40px;
+                
+                margin-left: 40px;
+                
+                font-size: 20px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #medium14 div{
+                padding-left:40px;
+                margin-top: 40px;
+                
+            }
+            #medium14 div input{
+                margin-right: 5px;
+                cursor: pointer;
+                margin-bottom: 30px;
+            }
+            
+            #medium14 button{
+                
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:2px auto;
+                height: 40px;
+                border-radius: 10px;
+                border: 2px solid black;
+                color:red;
+                background-color: white;
+            }
+            #medium14 button:hover{
+                cursor: pointer;
+                transform: translateY(-5px);
+                background-color: rgb(185, 10, 10);
+                color:white;
+            }
+            
+            #medium14 div span{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 18px;
+                color:rgb(13, 2, 49);
+            }
+
+        }
+        
+        @media (min-width:770px)and (max-width:2000px) {
+            body{
+                background: linear-gradient(to right, #00c6ff, #0072ff); 
+            }
+            
+            #medium{
+                border: 2px solid black;
+                
+                font-size: 30px;
+                font-family: 'Poppins',sans-serif;
+                text-align: right;
+                margin-top: 60px;
+
+                margin-right: 200px; 
+                border:none;
+                margin: 90px auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                padding-left: 280px;
+
+            }
+            #medium h2{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 40px;
+                color:#9b05bc  ;
+            }
+            #medium p{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 25px;
+            }
+            #medium14{
+                border-radius: 80px;
+                background:linear-gradient(to right,white,pink);
+                width:900px;
+                height:450px;
+                border: 2px solid black;
+                margin: 10px auto;
+                animation: float 7s ease-in-out infinite
+                
+            }
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+            }
+            #medium14 p{
+                margin-top: 30px;
+                
+                text-align: left;
+                margin-left: 80px;
+                font-size: 25px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            #medium14 button{
+                
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:2px auto;
+                height: 40px;
+                border-radius: 10px;
+                border: 2px solid black;
+                color:red;
+                background-color: white;
+            }
+            #medium14 button:hover{
+                cursor: pointer;
+                transform: translateY(-5px);
+                background-color: rgb(185, 10, 10);
+                color:white;
+            }
+            #medium14 div{
+                padding-left:80px;
+                margin-top: 50px;
+                
+            }
+            #medium14 div input{
+                
+                cursor: pointer;
+                margin-bottom: 40px;
+            }
+
+            #medium14 div span{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 20px;
+                color:rgb(26, 113, 9);
+            }
+            
+            
+        }
+    </style>
+
+    <!-- <style>
+        *{
+            margin: 0;
+        }
+        body{
+            /* background: linear-gradient(to right, #00c6ff, #0072ff);  */
+            /* background: linear-gradient(to right, #232526, #414345);  */
+            /*background: linear-gradient(to right, #8e0e00, #1f1c18);*/
+            background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+
+        }
+
+        #medium{
+            /* border: 2px solid black;
+            
+            font-size: 30px;
+            font-family: 'Poppins',sans-serif;
+            text-align: right;
+            margin-top: 60px;
+
+            margin-right: 200px; */
+            border:none;
+            margin: 90px auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-left: 280px;
+
+        }
+        #medium h2{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 40px;
+            color:#310155  ;
+        }
+        #medium p{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 25px;
+        }
+        #medium14{
+            border-radius: 80px;
+            background:linear-gradient(to right,white,pink);
+            width:900px;
+            height:450px;
+            border: 2px solid black;
+            margin: 10px auto;
+            animation: float 7s ease-in-out infinite
+            
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        #medium14 p{
+            margin-top: 30px;
+            
+            text-align: left;
+            margin-left: 80px;
+            font-size: 25px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #medium14 button{
+            
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:2px auto;
+            height: 40px;
+            border-radius: 10px;
+            border: 2px solid black;
+            color:red;
+            background-color: white;
+        }
+        #medium14 button:hover{
+            cursor: pointer;
+            transform: translateY(-5px);
+            background-color: rgb(185, 10, 10);
+            color:white;
+        }
+        #medium14 div{
+            padding-left:80px;
+            margin-top: 50px;
+            
+        }
+        #medium14 div input{
+            
+            cursor: pointer;
+            margin-bottom: 40px;
+        }
+
+        #medium14 div span{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            color:rgb(26, 113, 9);
+        }
+    </style> -->
+    <script>
+        
+        
+        function validateRadio14(){
+            
+            const radios = document.getElementsByName("q14");
+            let selected=null
+            for (let i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    selected=radios[i];
+                    break // Allow submit
+                }
+            }
+            if(!selected){
+                alert("Please select the correct choice.");
+                return false;// Block form submission
+            }
+            let score=parseInt(localStorage.getItem('score'))||0;
+            if(selected.value === '1'){
+                score+=1
+                localStorage.setItem('score',score);
+                console.log(score)
+            }
+            
+            
+            window.location.href = "Medium_15.htm"
+            return false;            
+        }
+    </script>
+
+</body>
+
+</html>

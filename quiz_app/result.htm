@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box2">
+        <div id="congrats12">
+            <img src="winner1.png" alt="winner">
+            <h1>CONGRATULATIONS</h1>
+            <img src="winner1.png" alt="winner">
+        </div>
+        <div>
+            <h2 id="styles1"></h2>
+            <h2 id="styless1"></h2>
+        </div>
+        <div id="quiz1">
+            <p>For Successfully Completed a game</p>
+            <h3>PROGRAMMING QUIZ</h3>
+        </div>
+        <div id="dinesh1">
+            <h4>PR0VIDED BY</h4>
+            <h2>DINESH K</h2>
+        </div> 
+        <div>
+            <button onclick="window.location.href='index.htm'">BACK</button>
+        </div>
+
+    </div>
+        <!-- <style>
+        *{
+            margin: 0;
+        }
+        
+
+        body{
+            background-color: #383838;
+            /*background-color: whitesmoke;*/
+        }
+        
+        #congrats12{
+            z-index: 2;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px ;
+            
+            position: relative;
+            margin: 60px auto;
+        }
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+        img{
+            width:150px;
+        }
+        body div h1{
+            letter-spacing: 2px;
+            color:rgba(84, 8, 8, 0.9);
+            font-size: 70px;
+            margin: 90px;
+            text-align: center;
+            animation: float 2ms ease-in-out infinite;
+            animation: colorDance 1.5s infinite linear;
+            text-shadow: 2px 2px 6px rgb(18, 3, 42);      
+            margin-top: 5px;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+            
+        }
+        @keyframes colorDance {
+            0%   { color: #ff4b1f; }
+            20%  { color: #ff9068; }
+            40%  { color: #1d5205; }
+            60%  { color: #0072ff; }
+            80%  { color: #8e2de2; }
+            100% { color: #ff4b1f; }
+        }
+        #styles{
+            margin-top: -100px;
+            color:aqua;
+            font-weight: bold;
+            font-size: 60px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+        #styless{
+            font-family: 'Poppins',sans-serif;
+            text-align: center;
+            font-size: 30px;
+            color:aqua;
+            letter-spacing: 3px;
+            word-spacing: 1px;
+            
+        }
+        #quiz p{
+            text-align: center;
+            color:rgb(211, 209, 228);
+            font-size: 50px;
+            margin: 10px;
+            margin-top: 80px;
+        }
+        #quiz h3{
+            text-align: center;
+            color:rgb(49, 155, 84);
+            font-size: 35px;
+            font-family: 'Poppins',sans-serif;
+            margin-top: 20px;
+            text-decoration: underline;
+        }
+        #dinesh h4{
+            text-align: center;
+            margin-top: 100px;
+            font-size: 30px;
+            font-style: normal;
+            font-family: 'Poppins',sans-serif;
+            font-weight: 300;
+            color:antiquewhite
+        }
+        #dinesh h2{
+            text-align: center;
+            margin-top: 4px;
+            font-size: 20px;
+            font-style: normal;
+            font-family: 'Poppins',sans-serif;
+            font-weight: 300;
+            color:antiquewhite;
+
+        }
+    </style> -->
+    <style>
+        *{
+            margin: 0;
+        }
+        @media (max-width:377px){
+            body{
+                background-color: #383838;
+            }
+            #congrats12{
+                z-index: 2;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 90px;
+                padding-top: 40px;
+                margin: 20px;
+            }
+            canvas {
+                position: fixed;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+            }
+            img{
+                width:40px;
+            }
+            body div h1{
+                letter-spacing: 2px;
+                color:rgba(84, 8, 8, 0.9);
+                font-size: 20px;
+                font-weight: bold;
+                margin: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:auto;
+                text-align: center;
+                
+                animation: float 2ms ease-in-out infinite;
+                animation: colorDance 1.5s infinite linear;
+                text-shadow: 2px 2px 6px rgb(18, 3, 42);      
+                margin-top: 10px;
+            }
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+                
+            }
+            @keyframes colorDance {
+                0%   { color: #ff4b1f; }
+                20%  { color: #ff9068; }
+                40%  { color: #1d5205; }
+                60%  { color: #0072ff; }
+                80%  { color: #8e2de2; }
+                100% { color: #ff4b1f; }
+            }
+            #styles1{
+                
+                color:aqua;
+                font-weight: bold;
+                font-size: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+            }
+            #styless1{
+                font-family: 'Poppins',sans-serif;
+                text-align: center;
+                font-size: 18px;
+                color:aqua;
+                letter-spacing: 1px;
+                
+                
+            }
+            #quiz1 p{
+                text-align: center;
+                color:rgb(211, 209, 228);
+                font-size: 20px;
+                margin: 10px;
+                margin-top: 80px;
+            }
+            #quiz1 h3{
+                text-align: center;
+                color:rgb(49, 155, 84);
+                font-size: 20px;
+                font-family: 'Poppins',sans-serif;
+                margin-top: 20px;
+                text-decoration: underline;
+            }
+            #dinesh1 h4{
+                text-align: center;
+                margin-top: 100px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite
+            }
+            #dinesh1 h2{
+                text-align: center;
+                margin-top: 4px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite;
+
+            }
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 70px auto;
+                background-color:gray;
+                width: 60px;
+                height: 30px;
+                border-radius: 10px;
+                border: none;
+                color:rgba(84, 8, 8, 0.9);
+                font-size: 16px;
+            }
+            button:hover{
+                background-color: rgba(84, 8, 8, 0.9);
+                color:white;
+                transform: translateY(-5px);
+            }
+        }
+        @media (min-width:378px) and (max-width :427px){
+            body{
+                background-color: #383838;
+            }
+            #congrats12{
+                z-index: 2;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 90px;
+                padding-top: 40px;
+                margin: 20px;
+            }
+            canvas {
+                position: fixed;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+            }
+            img{
+                width:40px;
+            }
+            body div h1{
+                letter-spacing: 2px;
+                color:rgba(84, 8, 8, 0.9);
+                font-size: 25px;
+                font-weight: bold;
+                margin: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:auto;
+                text-align: center;
+                
+                animation: float 2ms ease-in-out infinite;
+                animation: colorDance 1.5s infinite linear;
+                text-shadow: 2px 2px 6px rgb(18, 3, 42);      
+                margin-top: 10px;
+            }
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+                
+            }
+            @keyframes colorDance {
+                0%   { color: #ff4b1f; }
+                20%  { color: #ff9068; }
+                40%  { color: #1d5205; }
+                60%  { color: #0072ff; }
+                80%  { color: #8e2de2; }
+                100% { color: #ff4b1f; }
+            }
+            #styles1{
+                
+                color:aqua;
+                font-weight: bold;
+                font-size: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+            }
+            #styless1{
+                font-family: 'Poppins',sans-serif;
+                text-align: center;
+                font-size: 18px;
+                color:aqua;
+                letter-spacing: 1px;
+                
+                
+            }
+            #quiz1 p{
+                text-align: center;
+                color:rgb(211, 209, 228);
+                font-size: 20px;
+                margin: 10px;
+                margin-top: 80px;
+            }
+            #quiz1 h3{
+                text-align: center;
+                color:rgb(49, 155, 84);
+                font-size: 20px;
+                font-family: 'Poppins',sans-serif;
+                margin-top: 20px;
+                text-decoration: underline;
+            }
+            #dinesh1 h4{
+                text-align: center;
+                margin-top: 100px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite
+            }
+            #dinesh1 h2{
+                text-align: center;
+                margin-top: 4px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite;
+
+            }
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 70px auto;
+                background-color:gray;
+                width: 60px;
+                height: 30px;
+                border-radius: 10px;
+                border: none;
+                color:rgba(84, 8, 8, 0.9);
+                font-size: 16px;
+            }
+            button:hover{
+                background-color: rgba(84, 8, 8, 0.9);
+                color:white;
+                transform: translateY(-5px);
+            }
+
+        }
+        @media (min-width:428px) and (max-width:769px){
+            body{
+                background-color: #383838;
+            }
+            #congrats12{
+                z-index: 2;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                margin-top: 90px;
+                padding-top: 40px;
+                margin: 20px;
+            }
+            canvas {
+                position: absolute;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+            }
+            img{
+                
+                width:70px;
+            }
+            body div h1{
+                letter-spacing: 2px;
+                color:rgba(84, 8, 8, 0.9);
+                font-size: 35px;
+                font-weight: bold;
+                margin: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:auto;
+                text-align: center;
+                
+                animation: float 2ms ease-in-out infinite;
+                animation: colorDance 1.5s infinite linear;
+                text-shadow: 2px 2px 6px rgb(18, 3, 42);      
+                margin-top: 10px;
+            }
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+                
+            }
+            @keyframes colorDance {
+                0%   { color: #ff4b1f; }
+                20%  { color: #ff9068; }
+                40%  { color: #1d5205; }
+                60%  { color: #0072ff; }
+                80%  { color: #8e2de2; }
+                100% { color: #ff4b1f; }
+            }
+            #styles1{
+                
+                color:aqua;
+                font-weight: bold;
+                font-size: 28px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+            }
+            #styless1{
+                font-family: 'Poppins',sans-serif;
+                text-align: center;
+                font-size: 18px;
+                color:aqua;
+                letter-spacing: 1px;
+                
+                
+            }
+            #quiz1 p{
+                text-align: center;
+                color:rgb(211, 209, 228);
+                font-size: 34px;
+                margin: 10px;
+                margin-top: 80px;
+            }
+            #quiz1 h3{
+                text-align: center;
+                color:rgb(49, 155, 84);
+                font-size: 33px;
+                font-family: 'Poppins',sans-serif;
+                margin-top: 20px;
+                text-decoration: underline;
+            }
+            #dinesh1 h4{
+                text-align: center;
+                margin-top: 100px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite
+            }
+            #dinesh1 h2{
+                text-align: center;
+                margin-top: 4px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite;
+
+            }
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 70px auto;
+                background-color:gray;
+                width: 60px;
+                height: 30px;
+                border-radius: 10px;
+                border: none;
+                color:rgba(84, 8, 8, 0.9);
+                font-size: 16px;
+            }
+            button:hover{
+                background-color: rgba(84, 8, 8, 0.9);
+                color:white;
+                transform: translateY(-5px);
+            }
+
+
+        }
+        @media (min-width:770px)and (max-width:2000px) {
+                        body{
+                background-color: #383838;
+            }
+            #congrats12{
+                z-index: 2;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                margin-top: 90px;
+                padding-top: 40px;
+                margin: 20px;
+            }
+            canvas {
+                position: absolute;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+            }
+            img{
+                
+                width:100px;
+            }
+            body div h1{
+                letter-spacing: 2px;
+                color:rgba(84, 8, 8, 0.9);
+                font-size: 75px;
+                font-weight: bold;
+                margin: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:auto;
+                text-align: center;
+                
+                animation: float 2ms ease-in-out infinite;
+                animation: colorDance 1.5s infinite linear;
+                text-shadow: 2px 2px 6px rgb(18, 3, 42);      
+                margin-top: 10px;
+            }
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+                
+            }
+            @keyframes colorDance {
+                0%   { color: #ff4b1f; }
+                20%  { color: #ff9068; }
+                40%  { color: #1d5205; }
+                60%  { color: #0072ff; }
+                80%  { color: #8e2de2; }
+                100% { color: #ff4b1f; }
+            }
+            #styles1{
+                
+                color:aqua;
+                font-weight: bold;
+                font-size: 45px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+            }
+            #styless1{
+                font-family: 'Poppins',sans-serif;
+                text-align: center;
+                font-size: 29px;
+                color:aqua;
+                letter-spacing: 1px;
+                
+                
+            }
+            #quiz1 p{
+                text-align: center;
+                color:rgb(211, 209, 228);
+                font-size: 45px;
+                margin: 10px;
+                margin-top: 80px;
+            }
+            #quiz1 h3{
+                text-align: center;
+                color:rgb(49, 155, 84);
+                font-size: 33px;
+                font-family: 'Poppins',sans-serif;
+                margin-top: 20px;
+                text-decoration: underline;
+            }
+            #dinesh1 h4{
+                text-align: center;
+                margin-top: 80px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite
+            }
+            #dinesh1 h2{
+                text-align: center;
+                margin-top: 4px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite;
+
+            }
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 40px auto;
+                background-color:gray;
+                width: 90px;
+                height: 50px;
+                border-radius: 10px;
+                border: none;
+                color:rgba(84, 8, 8, 0.9);
+                font-size: 20px;
+                font-weight: bold;
+            }
+            button:hover{
+                background-color: rgba(84, 8, 8, 0.9);
+                color:white;
+                transform: translateY(-5px);
+            }
+
+
+
+        }
+
+    </style>
+
+    <script>
+        let scoree=localStorage.getItem("score")
+        document.getElementById('styless1').innerHTML=`[${scoree}/20]`;
+        let namee=localStorage.getItem("username")
+        document.getElementById("styles1").innerHTML=namee;
+    </script>
+</body>
+</html>

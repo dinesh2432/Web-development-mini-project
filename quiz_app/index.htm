@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ APPLICATION</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="welcome">
+        <h2>WELCOME TO <span id="quiz"><b>PROGRAMMING QUIZ</b></span> COMPETITION</h2>
+    </div>
+    <form action="declaration_1.htm" >
+        <div id="ready">
+            <h4>ARE YOU READY FOR THE QUIZ??</h4>
+            <input type="text" placeholder="ENTER YOUR NAME" id="name" required>
+            <button type="submit" onclick="getname()">YES</button>
+        </div>
+    </form>
+    <style>
+        *{
+            margin:0;
+        }
+        @media (max-width:377px){
+            body{
+                background-color:rgba(30, 8, 95, 0.7);
+            }
+            #welcome{
+                border: none;
+                width: 300px ;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:70px auto;
+                border-radius:10px ;
+                font-size: 15px;
+                background-color:rgba(227, 236, 237, 0.5);
+                
+            }
+            #welcome h2{
+                color: transparent; /* hide all text */
+                position: relative;
+            }
+            #quiz{
+                padding-left: 20px;
+                text-align: center;
+                color:palegreen;
+                position: relative;
+            }
+            #ready{
+                background-color: rgba(211, 205, 205, 0.4);
+                box-shadow: 2px 2px 2px 2px violet;
+                /* border: 2px solid ; */
+                border:none;
+                margin: 10px auto;
+                margin-top: 50px;
+                border-radius: 40px;
+                
+                width:280px;
+                height:400px;
+                animation: float 3s ease-in-out infinite
+            }
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+            }
+            #ready h4{
+                word-spacing:5px;
+                font-size: 25px;
+                color:rgba(7, 68, 92, 0.9);
+                text-align: center;
+                margin: auto;
+                font-family:'Poppins',sans-serif;
+                padding-top: 50px;
+            }
+            #name{
+                padding: 10px;
+                margin-bottom: 10px;
+                
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                
+                margin:50px auto;
+                
+            }
+            #ready input{
+                border:none;
+                width:200px;
+                height:20px;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Poppins',sans-serif;
+                font-size: 20px;
+                font-weight:bold;
+                margin:50px auto;
+                color:rgba(7, 68, 92, 0.9)
+            }
+            #ready input:focus{
+                
+                outline: none;
+                border: 2px solid;
+                background-color: rgba(136, 135, 174, 0.6);
+            }
+            #ready button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:50px auto;
+                border-radius: 10px;
+                height:40px;
+                width:90px;
+                border: none;
+                letter-spacing: 1px;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'Poppins',sans-serif;
+                 background-color: rgba(178, 66, 66, 0.8); 
+                background-color: rgb(230, 187, 187);
+                color:rgba(7, 68, 92, 0.9);
+            }
+            #ready button:hover{
+                background-color:  rgba(156, 5, 5, 0.6);
+                
+                transform: translateY(-5px);
+            }
+        }
+        @media (min-width:378px) and (max-width :427px){
+            body{
+                background-color:rgba(30, 8, 95, 0.7);
+            }
+            #welcome{
+                border: none;
+                width: 350px ;
+                margin:70px auto;
+                border-radius:10px ;
+                font-size: 17px;
+                background-color:rgba(227, 236, 237, 0.5);
+                
+            }
+            #welcome h2{
+                
+                color: transparent; /* hide all text */
+                position: relative;
+            }
+            #quiz{
+                padding-left: 50px;
+                text-align: center;
+                color:palegreen;
+                position: relative;
+            }
+            #ready{
+                background-color: rgba(211, 205, 205, 0.4);
+                box-shadow: 2px 2px 2px 2px violet;
+                /* border: 2px solid ; */
+                border:none;
+                margin: 10px auto;
+                margin-top: 50px;
+                border-radius: 40px;
+                
+                width:350px;
+                height:400px;
+                animation: float 3s ease-in-out infinite
+            }
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+            }
+            #ready h4{
+                word-spacing:5px;
+                font-size: 25px;
+                color:rgba(7, 68, 92, 0.9);
+                text-align: center;
+                margin: auto;
+                font-family:'Poppins',sans-serif;
+                padding-top: 50px;
+            }
+            #name{
+                padding: 10px;
+                margin-bottom: 10px;
+                
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                
+                margin:50px auto;
+                
+            }
+            #ready input{
+                border:none;
+                width:300px;
+                height:20px;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Poppins',sans-serif;
+                font-size: 20px;
+                font-weight:bold;
+                margin:50px auto;
+                color:rgba(7, 68, 92, 0.9)
+            }
+            #ready input:focus{
+                
+                outline: none;
+                border: 2px solid;
+                background-color: rgba(136, 135, 174, 0.6);
+            }
+            #ready button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:50px auto;
+                border-radius: 10px;
+                height:40px;
+                width:90px;
+                border: none;
+                letter-spacing: 1px;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'Poppins',sans-serif;
+                 background-color: rgba(178, 66, 66, 0.8); 
+                background-color: rgb(230, 187, 187);
+                color:rgba(7, 68, 92, 0.9);
+            }
+            #ready button:hover{
+                background-color:  rgba(156, 5, 5, 0.6);
+                
+                transform: translateY(-5px);
+            }
+            
+        }
+        @media (min-width:428px) and (max-width:769px){
+            body{
+                background-color:rgba(30, 8, 95, 0.7);
+            }
+            #welcome{
+                border: none;
+                width: 700px ;
+                margin:70px auto;
+                border-radius:10px ;
+                font-size: 15px;
+                background-color:rgba(227, 236, 237, 0.5);
+                
+            }
+            #quiz{
+            
+                font-size:30px;
+                color:rgba(190, 11, 11, 0.8)
+            }
+            #welcome h2{
+                padding-left: 10px;
+                word-spacing: 1px;
+                letter-spacing: 1px;
+                font-family: 'Poppins',sans-serif;
+                color:rgba(11, 68, 226, 0.8);
+            }
+            #ready{
+                background-color: rgba(211, 205, 205, 0.4);
+                box-shadow: 2px 2px 2px 2px violet;
+                /* border: 2px solid ; */
+                border:none;
+                margin: 10px auto;
+                margin-top: 50px;
+                border-radius: 40px;
+                
+                width:650px;
+                height:430px;
+                animation: float 3s ease-in-out infinite
+            }
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+            }
+            #ready h4{
+                word-spacing:5px;
+                font-size: 32px;
+                color:rgba(7, 68, 92, 0.9);
+                text-align: center;
+                margin: auto;
+                font-family:'Poppins',sans-serif;
+                padding-top: 60px;
+            }
+            #name{
+                padding: 10px;
+                margin-bottom: 10px;
+                
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                
+                margin:50px auto;
+                
+            }
+            #ready input{
+                border:none;
+                width:450px;
+                height:30px;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Poppins',sans-serif;
+                font-size: 20px;
+                font-weight:bold;
+                margin:80px auto;
+                color:rgba(7, 68, 92, 0.9)
+            }
+            #ready input:focus{
+                
+                outline: none;
+                border: 2px solid;
+                background-color: rgba(136, 135, 174, 0.6);
+            }
+            #ready button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:50px auto;
+                border-radius: 10px;
+                height:50px;
+                width:120px;
+                border: none;
+                letter-spacing: 1px;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'Poppins',sans-serif;
+                 background-color: rgba(178, 66, 66, 0.8); 
+                background-color: rgb(230, 187, 187);
+                color:rgba(7, 68, 92, 0.9);
+            }
+            #ready button:hover{
+                background-color:  rgba(156, 5, 5, 0.6);
+                color: white;
+                transform: translateY(-5px);
+            }
+
+        }
+        @media (min-width:770px)and (max-width:2000px) {
+            body{
+                background-color:rgba(30, 8, 95, 0.7);
+            }
+            #welcome{
+                border: none;
+                width: 1000px ;
+                
+                margin:100px auto;
+                border-radius:20px ;
+                font-size: 15px;
+                background-color:rgba(227, 236, 237, 0.5);
+                
+            }
+            #quiz{
+            
+                font-size:30px;
+                color:rgba(190, 11, 11, 0.8)
+            }
+            #welcome h2{
+                padding-left: 120px;
+                word-spacing: 2px;
+                letter-spacing: 2px;
+                font-family: 'Poppins',sans-serif;
+                color:rgba(11, 68, 226, 0.8);
+            }
+            #ready{
+                background-color: rgba(211, 205, 205, 0.4);
+                box-shadow: 2px 2px 2px 2px violet;
+                /* border: 2px solid ; */
+                border:none;
+                margin: 10px auto;
+                margin-top: 50px;
+                border-radius: 40px;
+                
+                width:900px;
+                height:400px;
+                animation: float 3s ease-in-out infinite
+            }
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+            }
+            #ready h4{
+                word-spacing:5px;
+                font-size: 40px;
+                color:rgba(7, 68, 92, 0.9);
+                text-align: center;
+                margin: auto;
+                font-family:'Poppins',sans-serif;
+                padding-top: 50px;
+            }
+            #name{
+                padding: 10px;
+                margin-bottom: 10px;
+                
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                
+                margin:50px auto;
+                
+            }
+            #ready input{
+                border:none;
+                width:550px;
+                height:30px;
+                border-radius: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Poppins',sans-serif;
+                font-size: 20px;
+                font-weight:bold;
+                margin:60px auto;
+                color:rgba(7, 68, 92, 0.9)
+            }
+            #ready input:focus{
+                
+                outline: none;
+                border: 2px solid;
+                background-color: rgba(136, 135, 174, 0.6);
+            }
+            #ready button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:50px auto;
+                border-radius: 10px;
+                height:50px;
+                width:150px;
+                border: none;
+                letter-spacing: 1px;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'Poppins',sans-serif;
+                 background-color: rgba(178, 66, 66, 0.8); 
+                background-color: rgb(230, 187, 187);
+                color:rgba(7, 68, 92, 0.9);
+            }
+            #ready button:hover{
+                background-color:  rgba(156, 5, 5, 0.6);
+                color: white;
+                transform: translateY(-5px);
+            }
+            
+
+        }
+    </style>
+    
+    <script>
+        function getname(){   
+
+            let name=document.getElementById("name").value;
+            localStorage.setItem("username",name)
+            console.log(name);
+            
+        }
+    </script>
+
+    
+</body>
+</html>

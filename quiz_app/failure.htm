@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box1">
+        <div id="congrats2">
+            <!-- <img src="winner1.png" alt="winner"> -->
+            <h1>RUNNER</h1>
+            <!-- <img src="winner1.png" alt="winner"> -->
+        </div>
+        <div>
+            <h2 id="runner"></h2>
+            <h2 id="runners"></h2>
+        </div>
+        <div id="sun">
+            <div id="quiz11">
+                <p>Would You Like To Play Again</p>
+            
+            </div>
+            
+            <div id="form_action">
+                <button onclick="window.location.href='index.htm'" id="bt11">YES</button>
+                <button onclick="window.location.href='index.htm'">NO</button>
+            </div>
+
+
+        </div>
+        
+        
+        
+        <div id="dinesh11">
+            <h4>PR0VIDED BY</h4>
+            <h2>DINESH K</h2>
+        </div> 
+
+    </div>
+    
+    <!-- <style>
+        *{
+            margin: 0;
+        }
+        
+
+        body{
+            background-color: #383838;
+            /*background-color: whitesmoke;*/
+        }
+        
+        #congrats2{
+            z-index: 2;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px ;
+            
+            position: relative;
+            margin: 60px auto;
+        }
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+        
+        body div h1{
+            letter-spacing: 2px;
+            color:rgba(84, 8, 8, 0.9);
+            font-size: 70px;
+            margin: 90px;
+            text-align: center;
+            animation: float 2ms ease-in-out infinite;
+            animation: colorDance 1.5s infinite linear;
+            text-shadow: 2px 2px 6px rgb(18, 3, 42);      
+            margin-top: 5px;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+            
+        }
+        @keyframes colorDance {
+            0%   { color: #ff4b1f; }
+            20%  { color: #ff9068; }
+            40%  { color: #1d5205; }
+            60%  { color: #0072ff; }
+            80%  { color: #8e2de2; }
+            100% { color: #ff4b1f; }
+        }
+        #runner{
+            margin-top: -100px;
+            color:aqua;
+            font-weight: bold;
+            font-size: 60px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+        #runner1{
+            font-family: 'Poppins',sans-serif;
+            text-align: center;
+            font-size: 30px;
+            color:aqua;
+            letter-spacing: 3px;
+            word-spacing: 1px;
+            
+        }
+        #quiz11 p{
+            font-family: 'Poppins',sans-serif;
+            text-align: center;
+            color:rgb(211, 209, 228);
+            font-size: 50px;
+            margin: 10px;
+            margin-top: 80px;
+        }
+        #quiz11 h3{
+            text-align: center;
+            color:rgb(49, 155, 84);
+            font-size: 35px;
+            font-family: 'Poppins',sans-serif;
+            margin-top: 20px;
+            text-decoration: underline;
+        }
+        #dinesh11 h4{
+            text-align: center;
+            margin-top: 100px;
+            font-size: 30px;
+            font-style: normal;
+            font-family: 'Poppins',sans-serif;
+            font-weight: 300;
+            color:antiquewhite
+        }
+        #dinesh11 h2{
+            text-align: center;
+            margin-top: 4px;
+            font-size: 20px;
+            font-style: normal;
+            font-family: 'Poppins',sans-serif;
+            font-weight: 300;
+            color:antiquewhite;
+
+        }
+        #form_action button{
+            border:2px solid black;
+            display: inline;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            height:40px;
+            width:90px;
+            
+            letter-spacing: 1px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Poppins',sans-serif;
+            /* background-color: rgba(178, 66, 66, 0.8); */
+            background-color: rgb(230, 187, 187);
+            color:rgba(7, 68, 92, 0.9);
+        }
+        #bt11{
+            margin:30px;
+            margin-left: 660px;
+        }
+
+        #form_action button:hover{
+            cursor: pointer;
+            transform: translateY(-5px);
+            background-color: red;
+            color:white;
+        }
+    </style> -->
+    <style>
+        *{
+            margin: 0;
+        }   
+        @media (max-width:377px){
+            body{
+                background-color: #383838;
+            }
+            
+            canvas {
+                position: fixed;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+            }
+            
+            body div h1{
+                
+                letter-spacing: 2px;
+                color:rgba(211, 215, 219, 0.9);
+                font-size: 40px;
+                font-weight: bold;
+                margin-top: 60px;
+                
+                text-align: center;
+                
+                animation: float 2ms ease-in-out infinite;
+                animation: colorDance 1.5s infinite linear;
+                text-shadow: 2px 2px 6px rgb(18, 3, 42);      
+                
+            }
+            
+            #runner{
+                color:rgba(9, 194, 241, 0.9);
+                font-weight: bold;
+                font-size: 22px;
+                margin-top: 50px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+            }
+            #runners{
+                font-family: 'Poppins',sans-serif;
+                text-align: center;
+                font-size: 20px;
+                color:rgba(9, 194, 241, 0.9);
+                letter-spacing: 1px;
+                margin-top: 3px;
+                
+            }
+            #quiz11 p{
+
+                text-align: center;
+                font-weight: bold;
+                color:rgb(135, 159, 177);
+                font-size: 28px;
+                margin: 10px;
+                margin-top: 70px;
+            }
+            
+            #dinesh1 h4{
+                text-align: center;
+                margin-top: 10px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite
+            }
+            #dinesh1 h2{
+                text-align: center;
+                margin-top: 40px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite;
+
+            }
+            #form_action{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:20px;
+                
+            }
+            button{
+                
+                margin: 60px auto;
+                background-color:gray;
+                
+                font-weight: bold;
+                width: 60px;
+                height: 30px;
+                border-radius: 10px;
+                border: none;
+                color:rgba(84, 8, 8, 0.9);
+                font-size: 16px;
+            }
+            button:hover{
+                background-color: rgba(84, 8, 8, 0.9);
+                color:white;
+                transform: translateY(-5px);
+            }
+            #dinesh11{
+                text-align: center;
+                font-family: 'Poppins',sans-serif;
+                
+                margin-top: 40px;
+                color:rgb(68, 166, 176)
+                
+            }
+            #dinesh11 h4{
+                font-size: 25px;
+            }
+            #dinesh11 h2{
+                margin-top: 3px;
+                font-size: 22px;
+            }
+        }
+        @media (min-width:378px) and (max-width :427px){
+            body{
+                background-color: #383838;
+            }
+            
+            canvas {
+                position: fixed;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+            }
+            
+            body div h1{
+                
+                letter-spacing: 2px;
+                color:rgba(211, 215, 219, 0.9);
+                font-size: 50px;
+                font-weight: bold;
+                margin-top: 60px;
+                
+                text-align: center;
+                
+                animation: float 2ms ease-in-out infinite;
+                animation: colorDance 1.5s infinite linear;
+                text-shadow: 2px 2px 6px rgb(18, 3, 42);      
+                
+            }
+            
+            #runner{
+                color:rgba(9, 194, 241, 0.9);
+                font-weight: bold;
+                font-size: 30px;
+                margin-top: 50px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+            }
+            #runners{
+                font-family: 'Poppins',sans-serif;
+                text-align: center;
+                font-size: 25px;
+                color:rgba(9, 194, 241, 0.9);
+                letter-spacing: 1px;
+                margin-top: 3px;
+                
+            }
+            #quiz11 p{
+
+                text-align: center;
+                font-weight: bold;
+                color:rgb(135, 159, 177);
+                font-size: 32px;
+                margin: 10px;
+                margin-top: 70px;
+            }
+            
+            #dinesh1 h4{
+                text-align: center;
+                margin-top: 10px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite
+            }
+            #dinesh1 h2{
+                text-align: center;
+                margin-top: 40px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite;
+
+            }
+            #form_action{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:20px;
+                
+            }
+            button{
+                
+                margin: 50px auto;
+                background-color:gray;
+                
+                font-weight: bold;
+                width: 90px;
+                height: 45px;
+                border-radius: 10px;
+                border: none;
+                color:rgba(84, 8, 8, 0.9);
+                font-size: 20px;
+            }
+            button:hover{
+                background-color: rgba(84, 8, 8, 0.9);
+                color:white;
+                transform: translateY(-5px);
+            }
+            #dinesh11{
+                text-align: center;
+                font-family: 'Poppins',sans-serif;
+                
+                margin-top: 15px;
+                color:rgb(68, 166, 176)
+                
+            }
+            #dinesh11 h4{
+                font-size: 25px;
+            }
+            #dinesh11 h2{
+                margin-top: 3px;
+                font-size: 22px;
+            }
+        }
+        @media (min-width:428px) and (max-width:769px){
+            body{
+                background-color: #383838;
+            }
+            
+            canvas {
+                position: fixed;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+            }
+            
+            body div h1{
+                
+                letter-spacing: 2px;
+                color:rgba(211, 215, 219, 0.9);
+                font-size: 60px;
+                font-weight: bold;
+                margin-top: 60px;
+                
+                text-align: center;
+                
+                animation: float 2ms ease-in-out infinite;
+                animation: colorDance 1.5s infinite linear;
+                text-shadow: 2px 2px 6px rgb(18, 3, 42);      
+                
+            }
+            
+            #runner{
+                color:rgba(9, 194, 241, 0.9);
+                font-weight: bold;
+                font-size: 45px;
+                margin-top: 50px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+            }
+            #runners{
+                font-family: 'Poppins',sans-serif;
+                text-align: center;
+                font-size: 30px;
+                color:rgba(9, 194, 241, 0.9);
+                letter-spacing: 1px;
+                margin-top: 3px;
+                
+            }
+            #quiz11 p{
+
+                text-align: center;
+                font-weight: bold;
+                color:rgb(135, 159, 177);
+                font-size: 40px;
+                margin: 10px;
+                margin-top: 70px;
+            }
+            
+            #dinesh1 h4{
+                text-align: center;
+                margin-top: 10px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite
+            }
+            #dinesh1 h2{
+                text-align: center;
+                margin-top: 40px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite;
+
+            }
+            #form_action{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:20px;
+                
+            }
+            button{
+                
+                margin: 50px auto;
+                background-color:gray;
+                
+                font-weight: bold;
+                width: 100px;
+                height: 50px;
+                border-radius: 10px;
+                border: none;
+                color:rgba(84, 8, 8, 0.9);
+                font-size: 20px;
+            }
+            button:hover{
+                background-color: rgba(84, 8, 8, 0.9);
+                color:white;
+                transform: translateY(-5px);
+            }
+            #dinesh11{
+                text-align: center;
+                font-family: 'Poppins',sans-serif;
+                
+                
+                color:rgb(68, 166, 176)
+                
+            }
+            #dinesh11 h4{
+                margin-top: 60px;
+                font-size: 28px;
+            }
+            #dinesh11 h2{
+                margin-top: 3px;
+                font-size: 26px;
+            }
+        }
+        @media (min-width:770px)and (max-width:2000px){
+            body{
+                background-color: #383838;
+            }
+            
+            canvas {
+                position: fixed;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+            }
+            
+            body div h1{
+                
+                letter-spacing: 2px;
+                color:rgba(211, 215, 219, 0.9);
+                font-size: 80px;
+                font-weight: bold;
+                margin-top: 60px;
+                
+                text-align: center;
+                
+                animation: float 2ms ease-in-out infinite;
+                animation: colorDance 1.5s infinite linear;
+                text-shadow: 2px 2px 6px rgb(18, 3, 42);      
+                
+            }
+            
+            #runner{
+                color:rgba(9, 194, 241, 0.9);
+                font-weight: bold;
+                font-size: 50px;
+                margin-top: 50px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+            }
+            #runners{
+                font-family: 'Poppins',sans-serif;
+                text-align: center;
+                font-size: 40px;
+                color:rgba(9, 194, 241, 0.9);
+                letter-spacing: 1px;
+                margin-top: 3px;
+                
+            }
+            #quiz11 p{
+
+                text-align: center;
+                font-weight: bold;
+                color:rgb(135, 159, 177);
+                font-size: 58px;
+                font-family: 'Poppins',sans-serif;
+                margin: 10px;
+                margin-top: 70px;
+            }
+            
+            #dinesh1 h4{
+                text-align: center;
+                margin-top: 10px;
+                font-size: 40px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite
+            }
+            #dinesh1 h2{
+                text-align: center;
+                margin-top: 40px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite;
+
+            }
+            #form_action{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right:400px;
+                margin-left: 390px;
+                
+                
+            }
+            button{
+                
+                margin: 50px auto;
+                background-color:gray;
+                
+                font-weight: bold;
+                width: 100px;
+                height: 50px;
+                border-radius: 10px;
+                border: none;
+                color:rgba(84, 8, 8, 0.9);
+                font-size: 20px;
+            
+            }
+            button:hover{
+                background-color: rgba(84, 8, 8, 0.9);
+                color:white;
+                transform: translateY(-5px);
+            }
+            #dinesh11{
+                text-align: center;
+                font-family: 'Poppins',sans-serif;
+                
+                
+                color:rgb(68, 166, 176)
+                
+            }
+            #dinesh11 h4{
+                margin-top: 80px;
+                font-size: 28px;
+            }
+            #dinesh11 h2{
+                margin-top: 3px;
+                font-size: 26px;
+            }
+        }
+        /*
+        @media (min-width:378px) and (max-width :427px){
+            body{
+                background-color: #383838;
+            }
+            #congrats2{
+                z-index: 2;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 90px;
+                padding-top: 40px;
+                margin: 20px;
+            }
+            canvas {
+                position: fixed;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+            }
+            img{
+                width:40px;
+            }
+            body div h1{
+                letter-spacing: 2px;
+                color:rgba(84, 8, 8, 0.9);
+                font-size: 25px;
+                font-weight: bold;
+                margin: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:auto;
+                text-align: center;
+                
+                animation: float 2ms ease-in-out infinite;
+                animation: colorDance 1.5s infinite linear;
+                text-shadow: 2px 2px 6px rgb(18, 3, 42);      
+                margin-top: 10px;
+            }
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+                
+            }
+            @keyframes colorDance {
+                0%   { color: #ff4b1f; }
+                20%  { color: #ff9068; }
+                40%  { color: #1d5205; }
+                60%  { color: #0072ff; }
+                80%  { color: #8e2de2; }
+                100% { color: #ff4b1f; }
+            }
+            #runner{
+                
+                color:aqua;
+                font-weight: bold;
+                font-size: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+            }
+            #runners{
+                font-family: 'Poppins',sans-serif;
+                text-align: center;
+                font-size: 18px;
+                color:aqua;
+                letter-spacing: 1px;
+                
+                
+            }
+            #quiz1 p{
+                text-align: center;
+                color:rgb(211, 209, 228);
+                font-size: 20px;
+                margin: 10px;
+                margin-top: 80px;
+            }
+            #quiz1 h3{
+                text-align: center;
+                color:rgb(49, 155, 84);
+                font-size: 20px;
+                font-family: 'Poppins',sans-serif;
+                margin-top: 20px;
+                text-decoration: underline;
+            }
+            #dinesh1 h4{
+                text-align: center;
+                margin-top: 100px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite
+            }
+            #dinesh1 h2{
+                text-align: center;
+                margin-top: 4px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite;
+
+            }
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 70px auto;
+                background-color:gray;
+                width: 60px;
+                height: 30px;
+                border-radius: 10px;
+                border: none;
+                color:rgba(84, 8, 8, 0.9);
+                font-size: 16px;
+            }
+            button:hover{
+                background-color: rgba(84, 8, 8, 0.9);
+                color:white;
+                transform: translateY(-5px);
+            }
+
+        }
+        @media (min-width:428px) and (max-width:769px){
+            body{
+                background-color: #383838;
+            }
+            #congrats2{
+                z-index: 2;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                margin-top: 90px;
+                padding-top: 40px;
+                margin: 20px;
+            }
+            canvas {
+                position: absolute;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+            }
+            img{
+                
+                width:70px;
+            }
+            body div h1{
+                letter-spacing: 2px;
+                color:rgba(84, 8, 8, 0.9);
+                font-size: 35px;
+                font-weight: bold;
+                margin: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:auto;
+                text-align: center;
+                
+                animation: float 2ms ease-in-out infinite;
+                animation: colorDance 1.5s infinite linear;
+                text-shadow: 2px 2px 6px rgb(18, 3, 42);      
+                margin-top: 10px;
+            }
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+                
+            }
+            @keyframes colorDance {
+                0%   { color: #ff4b1f; }
+                20%  { color: #ff9068; }
+                40%  { color: #1d5205; }
+                60%  { color: #0072ff; }
+                80%  { color: #8e2de2; }
+                100% { color: #ff4b1f; }
+            }
+            #runner{
+                
+                color:aqua;
+                font-weight: bold;
+                font-size: 28px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+            }
+            #runners{
+                font-family: 'Poppins',sans-serif;
+                text-align: center;
+                font-size: 18px;
+                color:aqua;
+                letter-spacing: 1px;
+                
+                
+            }
+            #quiz1 p{
+                text-align: center;
+                color:rgb(211, 209, 228);
+                font-size: 34px;
+                margin: 10px;
+                margin-top: 80px;
+            }
+            #quiz1 h3{
+                text-align: center;
+                color:rgb(49, 155, 84);
+                font-size: 33px;
+                font-family: 'Poppins',sans-serif;
+                margin-top: 20px;
+                text-decoration: underline;
+            }
+            #dinesh1 h4{
+                text-align: center;
+                margin-top: 100px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite
+            }
+            #dinesh1 h2{
+                text-align: center;
+                margin-top: 4px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite;
+
+            }
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 70px auto;
+                background-color:gray;
+                width: 60px;
+                height: 30px;
+                border-radius: 10px;
+                border: none;
+                color:rgba(84, 8, 8, 0.9);
+                font-size: 16px;
+            }
+            button:hover{
+                background-color: rgba(84, 8, 8, 0.9);
+                color:white;
+                transform: translateY(-5px);
+            }
+
+
+        }
+        @media (min-width:770px)and (max-width:2000px) {
+                        body{
+                background-color: #383838;
+            }
+            #congrats2{
+                z-index: 2;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                margin-top: 90px;
+                padding-top: 40px;
+                margin: 20px;
+            }
+            canvas {
+                position: absolute;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+            }
+            img{
+                
+                width:100px;
+            }
+            body div h1{
+                letter-spacing: 2px;
+                color:rgba(84, 8, 8, 0.9);
+                font-size: 75px;
+                font-weight: bold;
+                margin: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin:auto;
+                text-align: center;
+                
+                animation: float 2ms ease-in-out infinite;
+                animation: colorDance 1.5s infinite linear;
+                text-shadow: 2px 2px 6px rgb(18, 3, 42);      
+                margin-top: 10px;
+            }
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-15px); }
+                100% { transform: translateY(0px); }
+                
+            }
+            @keyframes colorDance {
+                0%   { color: #ff4b1f; }
+                20%  { color: #ff9068; }
+                40%  { color: #1d5205; }
+                60%  { color: #0072ff; }
+                80%  { color: #8e2de2; }
+                100% { color: #ff4b1f; }
+            }
+            #runner{
+                
+                color:aqua;
+                font-weight: bold;
+                font-size: 45px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+            }
+            #runners{
+                font-family: 'Poppins',sans-serif;
+                text-align: center;
+                font-size: 29px;
+                color:aqua;
+                letter-spacing: 1px;
+                
+                
+            }
+            #quiz1 p{
+                text-align: center;
+                color:rgb(211, 209, 228);
+                font-size: 45px;
+                margin: 10px;
+                margin-top: 80px;
+            }
+            #quiz1 h3{
+                text-align: center;
+                color:rgb(49, 155, 84);
+                font-size: 33px;
+                font-family: 'Poppins',sans-serif;
+                margin-top: 20px;
+                text-decoration: underline;
+            }
+            #dinesh1 h4{
+                text-align: center;
+                margin-top: 80px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite
+            }
+            #dinesh1 h2{
+                text-align: center;
+                margin-top: 4px;
+                font-size: 20px;
+                font-style: normal;
+                font-family: 'Poppins',sans-serif;
+                font-weight: 300;
+                color:antiquewhite;
+
+            }
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 40px auto;
+                background-color:gray;
+                width: 90px;
+                height: 50px;
+                border-radius: 10px;
+                border: none;
+                color:rgba(84, 8, 8, 0.9);
+                font-size: 20px;
+                font-weight: bold;
+            }
+            button:hover{
+                background-color: rgba(84, 8, 8, 0.9);
+                color:white;
+                transform: translateY(-5px);
+            }
+
+
+
+        }*/
+
+    </style>
+
+    <script>
+        let scoreee=localStorage.getItem("score")
+        document.getElementById('runners').innerHTML=`[${scoreee}/20]`;
+        let nameee=localStorage.getItem("username")
+        document.getElementById("runner").innerHTML=nameee;
+    </script>
+</body>
+</html>

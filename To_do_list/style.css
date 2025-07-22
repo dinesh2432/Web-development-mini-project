@@ -1,0 +1,51 @@
+body {
+  text-align: center;
+  margin: 40px;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  background: url(https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg);
+  
+}
+
+#task {
+  width: 50%;
+  margin: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  
+  background-color: pink;
+  border-radius:10px;
+  height: 30px;
+  font-size: 18px;
+  padding: 10px;
+}
+
+#add-task {
+  width: 20%;
+  height: 30px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size:25px;
+  color:rgb(1000,500,100);
+}
+
+#task-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#task-list li:last-child {
+  border-bottom: none;
+}
+
+#task-list li.completed {
+  text-decoration: line-through;
+}

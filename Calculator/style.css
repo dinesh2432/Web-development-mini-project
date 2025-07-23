@@ -1,0 +1,178 @@
+/* body{
+
+    text-align: center;
+    background:url(https://img.freepik.com/premium-vector/hexagonal-geometric-background-with-wave-line-hexagon-genetic-social-network_618588-603.jpg?semt=ais_hybrid);
+    background-repeat: no-repeat;
+    background-size: 1600px;
+
+   
+}
+#hello{
+    text-align: center;
+    width: auto;
+
+    
+    border: 20px solid olivedrab;
+    padding: 30px ;
+    margin: 40px;
+    
+    background-color:pink;
+    border-radius: 5%;
+
+
+    
+}
+h1{
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+    color:purple
+    
+}
+.btn:hover{
+    background-color:magenta;
+    cursor: pointer;
+}
+
+.btn{
+    width: 100px;
+    height:50px;
+    border-radius: 10px;
+    color: red;
+    margin:20px;
+    text-align: auto;
+    font-size: 35px;
+    font-style:oblique;
+    
+
+}
+.input{
+    
+    width: 500px;
+    height: 50px;
+    padding:10px;
+    font-size: 50px;
+    margin:5px;
+    border-radius: 5px 5px 6px 10px;
+    
+}
+#i{
+    color:red;
+}
+#j{
+    color:black;
+
+}
+#k{
+    color:darkblue;
+}
+#l{
+    color:mediumslateblue;
+}
+#p{
+    color:darkcyan
+
+}
+#u{
+    color:darkmagenta;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color: rgb(238, 231, 231);
+    
+}
+#hello{
+    height: 450px;
+    border: 2px solid none;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.9);
+    background-color: white;
+    animation: popup 0.6s ease-in-out;
+}
+@keyframes popup {
+    from{
+        transform: translateY(30px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+
+#hello h1{
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+form{
+    
+    
+    border: 2px solid none;
+    width: 95%;
+    margin: 0 auto;
+    height: 350px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.08);
+    
+    
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    height: 40px;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: end;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+form div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 10px;
+    gap: 10px;
+    width: 100%;
+    
+}
+form div input{
+    width: 20%;
+    height: 45px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(0,0,0,0.2);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+form div input:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.6);
+    transform: translateY(-5px);
+}
+

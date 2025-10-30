@@ -1,0 +1,19 @@
+*{
+    background-color: black;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: white;
+    
+}
+h1{
+    border: 2px solid black;
+    padding: 40px;
+    font-size: 150px;
+    background-color: rgba(128, 128, 128,0.6);
+    border-radius: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
